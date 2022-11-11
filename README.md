@@ -1,9 +1,7 @@
 ### 音乐_喜欢的给个 Star 吧
 # 项目的下载运行
-1. 复制链接 `https://gitee.com/lysimportant/cloud-music` 打开终端(cmd/命令行窗口)
-2. 输入 `git clone https://gitee.com/lysimportant/cloud-music`
-3. 克隆完成后进入文件夹输入 `npm install` 下载依赖
-4. 运行命令 `npm run serve`
+1. 克隆完成后进入文件夹输入 `npm install` 下载依赖
+2. 运行命令 `npm run serve`
 
 # 使用的技术栈
 1. Vue 
