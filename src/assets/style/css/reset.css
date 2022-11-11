@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  min-width: 1500px;
+}
+.el-carousel__indicators--outside {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  margin: auto;
+  transform: translate(-50%, -50%);
+}
+.el-carousel__indicator--horizontal {
+	padding: 0;
+	margin: 0 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+.el-carousel__button {
+	width: 8px;
+	height: 8px;
+}
+.text_hidden {
+    overflow : hidden;
+    text-overflow: ellipsis;/* 弹性伸缩盒子模型显示*/
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数*/
+    -webkit-line-clamp : 2;
+    /*大设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-box-orient: vertical;
+}
+.item_active {
+  color: #DC443E;
+}
+.songs_top_bottom {
+  animation: songs_top_bottom .5s linear forwards;
+}
+.icon-bofang {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 35px!important;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .3);
+}
+.el-tabs__active-bar {
+	background-color: #FF0000;
+}
+.el-tabs__item.is-active {
+	color: #FF0000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*分页居中*/
+.el-pagination  {
+  position: relative;
+  top: 15px;
+  left: 20%;
+  transform: translate(-50%, -410%);
+  display: inline;
+}
+.el-aside {
+  width: 0px;
+}
+
+.clearMusic,
+.backMusic,
+.stopMusic,
+.nextMusic,
+.songMusic {
+  position: absolute;
+  right: 105px;
+  bottom: 28px;
+  width: 20px;
+  font-size: 20px;
+  height: 20px;
+  color: #FF0000;
+  z-index: 99;
+}
+.backMusic {
+  right: 80px;
+  color: #000;
+}
+
+.stopMusic {
+  right: 58px;
+  bottom: 36px;
+  font-size: 24px!important;
+  color: #000;
+}
+.nextMusic {
+  right: 33px;
+  color: #000;
+}
+.songMusic {
+  right: 5px;
+  font-size: 16px;
+  bottom: 25px;
+  color: #000;
+}
+.aplayer-icon {
+  width: 23px!important;
+  height: 23px!important;
+  bottom: 20px!important;
+  font-size: 10px!important;
+}
+.aplayer-volume-bar-wrap {
+  bottom: 20px!important;
+  right: 3px!important;
+}
+.aplayer-time {
+  right: 10px!important;
+  bottom: 12px!important;
+}
+.aplayer-bar {
+  bottom: 5px!important;
+  width: 99% !important;
+}
+.aplayer-volume {
+  background-color: rgb(255, 0, 0) !important;
+}
+.aplayer-lrc-current {
+  font-size: 14px!important;
+  height: 18px!important;
+  color: #517EAF!important;
+}
+.clearfix:before,.clearfix:after {
+  content :"";
+  display:table;/*转换成表格*/
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.aplayer-volume-bar {
+  right: 0px!important;
+
+}
+.aplayer-volume, .aplayer-volume-bar {
+  width: 20px!important;
+}
