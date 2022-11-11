@@ -50,8 +50,8 @@ export default {
     const { data: privateContent } = await reqPrivatecontent()
     this.banners = res.banners
     this.recommendSongs = response.result
-    this.newSongs = newSong.result.slice(0,9)
-    this.mv = mv.result.slice(0, 3)
+    this.newSongs = newSong && newSong.result.slice(0, 9)
+    this.mv = mv && mv.result.slice(0, 3)
     // this.recommendSongs.unshift(reList.recommend[0])
     this.privateContent = privateContent.result
     if (res.code !== 200) return this.$message.error('获取数据失败!')
