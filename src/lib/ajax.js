@@ -14,7 +14,7 @@ export function ajax (config) {
   // 请求拦截
   instance.interceptors.request.use(config => {
     NProgress.start()
-    config.headers.Authorization = window.sessionStorage.getItem('token')
+    // config.headers.Authorization = window.sessionStorage.getItem('token')
     return config
   })
   // 响应拦截

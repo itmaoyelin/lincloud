@@ -1,8 +1,0 @@
-{
-  "rewrites":[
-    {
-      "source":"https://www.mylapi.icu",
-      "destination":"https://maoxiu.mylapi.icu"
-    }
-  ]
-}
