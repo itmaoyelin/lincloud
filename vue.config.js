@@ -34,7 +34,9 @@ module.exports = {
       }
     }
   },
+  publicPath: './',
   devServer: {
+    // proxy: 'https://www.mylapi.icu'
     proxy: {
       '/api': { // 触发匹配路径
         // target: 'https://lianghj.top:3000', // 代理跳转到的站点
@@ -43,7 +45,18 @@ module.exports = {
         pathRewrite: { // 重写路径: 去掉路径中开头的'/api'
           '^/api': ''
         }
+      },
+      '/prod': { // 触发匹配路径
+        // target: 'https://lianghj.top:3000', // 代理跳转到的站点
+        target: 'https://www.mylapi.icu',
+        changeOrigin: true, // 允许跨域
+        secure: 'true',
+        pathRewrite: { // 重写路径: 去掉路径中开头的'/api'
+          '^/prod': ''
+        }
       }
     }
+
   }
+
 }
