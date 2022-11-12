@@ -9,7 +9,7 @@ export function ajax (config) {
   const instance = axios.create({
     // baseURL: 'http://120.78.137.246:3000',
     baseURL: BASE_URL,
-    timeout: 3000
+    timeout: 10000
   })
   // 请求拦截
   instance.interceptors.request.use(config => {
